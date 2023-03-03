@@ -18,7 +18,7 @@ export class MoviesService {
 
 
   async getMovies(name: string) {
-    let url = `http://www.omdbapi.com/?t=${name}&apikey=${environment.apiKey}`;
+    let url = `https://www.omdbapi.com/?t=${name}&apikey=${environment.apiKey}`;
     let result = await this.httpService.get(url)
     return result
   }
