@@ -1,0 +1,26 @@
+<div id="result">
+    <div class="info">
+        <img [src]="linkPhoto" class="poster">
+        <div>
+            <h2>{{title}}</h2>
+            <div class="rating">
+                <img src="../../../assets/star-icon.svg">
+                <h4>{{imdbRating}}</h4>
+            </div>
+            <div class="details">
+                <span>{{dataated}}</span>
+                <span>{{year}}</span>
+                <span>{{runtime}}</span>
+            </div>
+            <div class="genre">
+                <ng-container *ngFor="let genero of generos">
+                    <div>{{genero}}</div>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+    <h3>Plot:</h3>
+    <p>{{plot}}</p>
+    <h3>Cast:</h3>
+    <p>{{actors}}</p>
+</div>
